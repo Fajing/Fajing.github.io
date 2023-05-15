@@ -1,6 +1,6 @@
 baseURL: https://fajing.github.io
-languageCode: en-us
-title: My New Hugo Site
+languageCode: zh-cn
+title: 发竞的个人站点
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -18,83 +18,49 @@ minify:
 
 languages:
     en:
-        languageName: "English"
-        weight: 1
+        languageName: ":cn:"
+        weight: 2
         taxonomies:
           category: categories
           tag: tags
           series: series
         menu:
             main:
-                - name: Archive
+                - name: 文章
                   url: archives
                   weight: 5
-                - name: Search
+                - name: 搜索
                   url: search/
+                  weight: 6
+                - name: 分类
+                  url: categories/
+                  weight: 7
+                - name: 系列
+                  url: series/
                   weight: 10
-                - name: Tags
+                - name: 标签
                   url: tags/
                   weight: 10
-                - name: WiKi
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-                - name: Discord
-                  url: https://discord.gg/ahpmTvhVmp
 
-    fr:
-        languageName: ":fr:"
-        languageAltTitle: French
-        weight: 2
-        title: PaperModL2
-        taxonomies:
-          category: FRcategories
-          tag: FRtags
-          series: FRseries
-        profileMode:
-            enabled: true
-            title: PaperMod
-            imageUrl: "https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/1f317.svg"
-            imageTitle: ProfileMode image
-            # imageWidth: 120
-            # imageHeight: 120
-            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-            buttons:
-                - name: Blog
-                  url: posts
-                - name: Profile Mode
-                  url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-        menu:
-            main:
-                - name: Archive
-                  url: archives/
-                  weight: 5
-                - name: FRTags
-                  url: frtags
-                  weight: 10
-                - name: FRCategories
-                  url: frcategories
-                  weight: 10
-                - name: FRSeries
-                  url: frseries
-                  weight: 10
-                - name: NullLink
-                  url: "#"
-
-    fa:
-        languagedirection: rtl
-        weight: 3
-        title: PaperMod RTL
-        homeInfoParams:
-            Title: "Hi there \U0001F44B"
-            Content: Welcome to RTL layout
-        taxonomies:
-          category: FAcategories
-          tag: FAtags
-          series: FAseries
-        menu:
-            main:
-                - name: FATags
-                  url: fatags
-                  weight: 10
+    # cn:
+    #     languageName: ":cn:"
+    #     languageAltTitle: 中文
+    #     weight: 1
+    #     taxonomies:
+    #       category: categories
+    #       tag: tags
+    #       series: series
+    #     menu:
+    #         main:
+    #             - name: 文章
+    #               url: archives
+    #               weight: 5
+    #             - name: 搜索
+    #               url: search/
+    #               weight: 10
+    #             - name: 标签
+    #               url: tags/
+    #               weight: 10
 
 outputs:
     home:
@@ -110,14 +76,14 @@ params:
 
     defaultTheme: auto
     # disableThemeToggle: true
-    ShowShareButtons: true
+    ShowShareButtons: false
     ShowReadingTime: true
     # disableSpecial1stPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
-    ShowRssButtonInSectionTermList: true
+    ShowRssButtonInSectionTermList: false
     ShowToc: true
     # comments: false
     images: ["papermod-cover.png"]
@@ -136,28 +102,19 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "PaperMod"
+        Title: "你好"
         Content: >
-            Welcome to demo of hugo's theme PaperMod.
+            欢迎来到我的站点。
 
-            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
-
-            - Do give a 🌟 on Github !
-
-            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
 
     socialIcons:
         - name: github
-          url: "https://github.com/adityatelange/hugo-PaperMod"
-        - name: KoFi
-          url: "https://ko-fi.com/adityatelange"
-        - name: Rss
-          url: "index.xml"
+          url: "https://github.com/Fajing"
 
-    editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
+    # editPost:
+    #     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
+    #     Text: "Suggest Changes" # edit text
+    #     appendFilePath: true # to append file path to Edit link
 
     # label:
     #     text: "Home"
@@ -205,23 +162,23 @@ markup:
 privacy:
     vimeo:
         disabled: false
-        simple: true
+        simple: false
 
     twitter:
         disabled: false
         enableDNT: true
-        simple: true
+        simple: false
 
     instagram:
         disabled: false
-        simple: true
+        simple: false
 
     youtube:
         disabled: false
-        privacyEnhanced: true
+        privacyEnhanced: false
 
 services:
     instagram:
-        disableInlineCSS: true
+        disableInlineCSS: false
     twitter:
-        disableInlineCSS: true
+        disableInlineCSS: false
