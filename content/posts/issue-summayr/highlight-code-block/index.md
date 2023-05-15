@@ -22,7 +22,7 @@ author: "Fajing"
 
 ## 分析
 
-首先想的是通过 [highlight.js](https://highlightjs.org) 和 [Prism](https://prismjs.com) 这样的代码高亮 JS 库对文件内容进行高亮处理。但是由于 Prism 在公司的私有 Repository 中没有提供，只对 highlight.js 进行了测试（详细代码请看 [附录](#附录)）。
+首先想的是通过 [highlight.js](https://highlightjs.org) 和 [Prism](https://prismjs.com) 这样的代码高亮 JS 库对文件内容进行高亮处理。但是由于 Prism 在公司的私有 Repository 中没有提供，只对 highlight.js 进行了测试。
 
 测试 highlight.js 对代码进行高亮处理时发现问题，由于 API 返回的数据格式如下
 
@@ -193,8 +193,9 @@ getfileType(filePath: string) {
 
 自定义语言部分：
 
-	- 关于正则表达式进行分词的逻辑还不是完全清晰，需要进一步研究。
-	- 关于 aliases 定义过的别名，在传入组件中是不能背识别，需要进一步研究。
+- 关于正则表达式进行分词的逻辑还不是完全清晰，需要进一步研究。
+
+- 关于 aliases 定义过的别名，在传入组件中是不能背识别，需要进一步研究。
 
 ## 参考
 
